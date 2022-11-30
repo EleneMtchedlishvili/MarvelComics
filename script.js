@@ -17,7 +17,7 @@ const main = document.getElementsByClassName("main");
 getComics();
 
 async function getComics() {
-  const res = await fetch("comics");
+  const res = await fetch(comics);
   const data = await res.json();
   console.log(data);
 }
