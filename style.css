@@ -1,0 +1,32 @@
+.banner {
+  width: 100%;
+}
+.navbar-brand {
+  margin-left: 15px;
+  border: 3px solid rgb(211, 0, 0);
+  border-radius: 4px;
+
+  background-color: rgb(211, 0, 0);
+}
+.btn {
+  border: 1px solid rgb(211, 0, 0) !important;
+  background-color: rgb(211, 0, 0) !important;
+}
+/* ... */
+.card {
+  margin: 4px;
+  background-color: rgb(188, 7, 7) !important;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+p {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.card_img {
+  width: 100%;
+}
