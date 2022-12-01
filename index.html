@@ -18,13 +18,19 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- title icon -->
+    <link
+      rel="icon"
+      href="src/Marvel Images/mmm.png"
+      type="image/x-icon"
+      sizes="16x16 32x32"
+      class="next-head"
+    />
     <title>Marvel Comics</title>
   </head>
   <body>
     <header>
       <!-- navbar -->
-      <!-- <nav class="navbar navbar-light justify-content-between">
-        <a class="navbar-brand"><b class="m-2">MARVEL COMICS</b></a> -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><b class="m-2">MARVEL COMICS</b></a>
         <button
@@ -48,9 +54,7 @@
             <a class="nav-item nav-link disabled" href="#">Disabled</a>
           </div>
         </div>
-        <!-- ... -->
-
-        <form class="form-inline">
+        <form class="form-inline d-flex">
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -60,74 +64,30 @@
           <button class="btn" type="submit">Search</button>
         </form>
       </nav>
-      <!-- </nav> -->
+      <!-- banner image -->
       <img
         class="banner"
         src="src/Marvel Images/marvel-fresh-start-banner.jpg"
-        alt=""
+        alt="banner"
       />
     </header>
+    <!-- cards section -->
     <section class="main mt-4 d-flex justify-content-center flex-wrap">
-      <!-- card1 -->
-      <div class="card col-3">
+      <div class="card">
         <img
-          class="card_img"
-          src="src/Marvel Images/wp2722081.jpg"
-          alt="card1"
+          class="card-img-top"
+          src="src/Marvel Images/intro-1611277038.jpg"
+          alt="Card image cap"
         />
-        <div class="card_caption">
-          <h3>Thanos: Death Notes #1</h3>
-          <p>Gronbekk, Vito</p>
-        </div>
-        <div class="view_rating mt-4">
-          <p>view <span>3,420</span></p>
-          <p>rating <span>9.0</span></p>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <!-- card2 -->
-      <div class="card col-3">
-        <img
-          class="card_img"
-          src="src/Marvel Images/wp2722081.jpg"
-          alt="card1"
-        />
-        <div class="card_caption">
-          <h3>Thanos: Death Notes #1</h3>
-          <p>Gronbekk, Vito</p>
-        </div>
-        <div class="view_rating mt-4">
-          <p>view <span>3,420</span></p>
-          <p>rating <span>9.0</span></p>
-        </div>
-      </div>
-      <!-- card3 -->
-      <div class="card col-3">
-        <img
-          class="card_img"
-          src="src/Marvel Images/wp2722081.jpg"
-          alt="card1"
-        />
-        <div class="card_caption">
-          <h3>Thanos: Death Notes #1</h3>
-          <p>Gronbekk, Vito</p>
-        </div>
-        <div class="view_rating mt-4">
-          <p>view <span>3,420</span></p>
-          <p>rating <span>9.0</span></p>
-        </div>
-      </div>
-      <!-- card4 -->
-      <!-- <div class="card mt-4 col-3">
-        <img class="card_img" src="src/Marvel Images/wp2722081.jpg" alt="card1" />
-        <div class="card_caption">
-          <h3>Thanos: Death Notes #1</h3>
-          <p>Gronbekk, Vito</p>
-        </div>
-        <div class="view_rating mt-4">
-          <p>view <span>3,420</span></p>
-          <p>rating <span>9.0</span></p>
-        </div>
-      </div> -->
     </section>
     <script src="script.js"></script>
   </body>
