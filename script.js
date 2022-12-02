@@ -1,3 +1,5 @@
+// import * as bootstrap from "bootstrap";
+
 const characters =
   "https://gateway.marvel.com/v1/public/characters?apikey=97d62f598e1023a90303368f09b1004a";
 const comicsEndpoint =
@@ -63,7 +65,13 @@ function showCharacters(characters) {
                  </p>
               </div>
               <div class= "card-footer">
-                 <a href="${events}" class="btn btn-primary">View Details</a>
+                 <button 
+                    class="btn btn-primary" 
+                    id="${id}" 
+                    type="button"
+                >
+                    View Details
+                </button>
                  <div onClick="addFavorite({id: '${id}', name: '${name}', description: '${description}', imgUrl: '${imgUrl}', events: '${events}'})">
                     <svg class="heart_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                  </div>
@@ -72,6 +80,8 @@ function showCharacters(characters) {
           `;
 
     main.appendChild(charactersElement);
+
+    document.getElementById(id).onclick = () => showModal(name, description);
   });
 }
 
@@ -106,3 +116,32 @@ function addFavorite(character) {
     alert("your hero already added in favorites");
   }
 }
+
+var modalWrap = null;
+const showModal = (title, description) => {
+  if (modalWrap !== null) {
+    modalWrap.remove();
+  }
+
+  modalWrap = document.createElement("div");
+  modalWrap.innerHTML = `
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <h5 class="modal-title">${title}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>${description}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  main.appendChild(modalWrap);
+
+  var modal = new bootstrap.Modal(modalWrap.querySelector(".modal"));
+  modal.show();
+};
