@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Marvel&display=swap");
+
+:root {
+  --primary-color: rgb(188, 7, 7);
+  --secondary-color: rgb(211, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Marvel", sans-serif;
+  overflow-x: hidden;
+  background-image: url(src/Marvel\ Images/bg.jpg);
+  background-repeat: no-repeat;
+}
+/* navigation */
+.nav-icon {
+  width: 40px;
+  border-radius: 5px;
+}
+.navbar-toggler {
+  background-color: rgba(196, 0, 0, 0.63) !important;
+}
+.navbar-nav {
+  background-color: rgba(196, 0, 0, 0.63);
+  border-radius: 5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around !important;
+  margin: 4px;
+}
+.nav-svg {
+  width: 130px;
+  height: 52px;
+}
+.nav-item {
+  font-family: "Marvel", sans-serif;
+  font-weight: bold;
+}
+.cont {
+  font-family: "Marvel", sans-serif;
+  font-weight: bolder;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+}
+.whole-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin-bottom: 40px;
+}
+
+label {
+  color: #333;
+}
+.btn {
+  color: white !important;
+  border: 1px solid var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+}
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-left: 3px;
+}
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
+}
+
+.card {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 480px;
+}
