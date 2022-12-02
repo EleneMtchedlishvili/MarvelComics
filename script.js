@@ -46,12 +46,12 @@ function showCharacters(characters) {
   characters.forEach((characters) => {
     const { id, name, description, thumbnail, events } = characters;
 
-    const comicsElement = document.createElement("div");
-    comicsElement.classList.add("card");
+    const charactersElement = document.createElement("div");
+    charactersElement.classList.add("card");
 
     const imgUrl = `${thumbnail.path}/${image_size}.${thumbnail.extension}`;
 
-    comicsElement.innerHTML = `
+    charactersElement.innerHTML = `
         
               <img class="card-image" 
               src="${imgUrl}" 
@@ -71,7 +71,7 @@ function showCharacters(characters) {
        
           `;
 
-    main.appendChild(comicsElement);
+    main.appendChild(charactersElement);
   });
 }
 

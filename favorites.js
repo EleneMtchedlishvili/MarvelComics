@@ -18,10 +18,10 @@ function showFavorites() {
   let favorites = JSON.parse(localStorage.getItem("favorites")) ?? [];
 
   favorites.forEach((favorite) => {
-    const comicsElement = document.createElement("div");
-    comicsElement.classList.add("card");
+    const charactersElement = document.createElement("div");
+    charactersElement.classList.add("card");
 
-    comicsElement.innerHTML = `
+    charactersElement.innerHTML = `
         
               <img class="card-image" 
               src="${favorite.imgUrl}" 
@@ -40,7 +40,7 @@ function showFavorites() {
               </div>
           `;
 
-    favoritesContainer.appendChild(comicsElement);
+    favoritesContainer.appendChild(charactersElement);
   });
 }
 
