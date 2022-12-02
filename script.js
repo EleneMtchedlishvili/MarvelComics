@@ -3,7 +3,7 @@
 const characters =
   "https://gateway.marvel.com/v1/public/characters?apikey=97d62f598e1023a90303368f09b1004a";
 const comicsEndpoint =
-  "https://gateway.marvel.com/v1/public/comics?limit=10&apikey=97d62f598e1023a90303368f09b1004a";
+  "https://gateway.marvel.com/v1/public/comics?limit=20&apikey=97d62f598e1023a90303368f09b1004a";
 const image_size = "portrait_incredible";
 
 const comicsByCharacters =
@@ -97,10 +97,6 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// თუ ტაიტლს ფრჩხილებში უწერია 2022 გაუშვას ლეითესთ კომიქსებში
-
-// favorites
-
 function addFavorite(character) {
   console.log(character);
 
@@ -113,7 +109,7 @@ function addFavorite(character) {
     favorites.push(character);
     localStorage.setItem("favorites", JSON.stringify(favorites));
   } else {
-    alert("your hero already added in favorites");
+    alert("item is already added in favorites");
   }
 }
 

@@ -4,6 +4,8 @@
   --primary-color: rgb(188, 7, 7);
   --secondary-color: rgb(211, 0, 0);
 }
+body {
+}
 /* header banner */
 .banner {
   width: 100%;
@@ -25,7 +27,9 @@
 .btn {
   color: white !important;
 }
-
+.bg-img {
+  background-image: url(src);
+}
 /* popular this week */
 .popular {
   font-family: "Marvel", sans-serif;
