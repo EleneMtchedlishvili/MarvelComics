@@ -35,7 +35,7 @@ function showFavorites() {
               <div class= "card-footer">
                  <a href="${favorite.events}" class="btn btn-primary">View Details</a>
                  <div onClick="removeFavorite('${favorite.id}')">
-                 <img class="heart_icon" src="src/Marvel Images/heart icon.jpg" alt="heart icon" />                 </div>
+                 <img class="heart_icon" src="src/Marvel Images/heart icon.jpg" alt="heart icon" />
               </div>
           `;
 
