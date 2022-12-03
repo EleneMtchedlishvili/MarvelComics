@@ -4,16 +4,12 @@
   --primary-color: rgb(188, 7, 7);
   --secondary-color: rgb(211, 0, 0);
 }
-body {
-}
 /* header banner */
 .banner {
   width: 100%;
 }
 /* navigation */
 .navbar {
-  display: flex;
-  justify-content: space-around !important;
   margin: 4px;
 }
 .nav-svg {
@@ -27,9 +23,7 @@ body {
 .btn {
   color: white !important;
 }
-.bg-img {
-  background-image: url(src);
-}
+
 /* popular this week */
 .popular {
   font-family: "Marvel", sans-serif;
@@ -37,11 +31,11 @@ body {
   background-color: var(--primary-color);
   color: white;
 }
-/* cardd and hover effect */
+/* card and hover effect */
 .card {
   width: 18rem;
   margin: 6px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   height: 360px;
   padding: 2rem 1rem;
   background-color: #fff;
@@ -56,23 +50,24 @@ body {
 }
 .card::before {
   content: "";
-  position: absolute;
   top: 0;
   left: 0;
   display: block;
   width: 100%;
   height: 100%;
+  background-size: cover;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 9;
   transition: 0.5s all;
   opacity: 0;
 }
 .card:hover::before {
   opacity: 1;
 }
+
 .card-image {
-  width: 100%;
-  height: 100%;
+  width: 18rem;
+  height: 360px;
   position: absolute;
   top: 0;
   left: 0;
@@ -87,9 +82,10 @@ body {
 }
 .card .card-footer {
   display: flex;
-  justify-content: space-around;
   opacity: 0;
-  margin-top: 10rem;
+  z-index: 9;
+  margin-top: 13rem;
+  margin-inline: auto;
 }
 .card:hover .card-info {
   opacity: 1;
@@ -114,7 +110,7 @@ body {
   z-index: 9;
 }
 .heart_icon {
-  width: 10%;
+  width: 40px;
   background-color: red;
   border-radius: 5px;
   color: white !important;
@@ -123,18 +119,7 @@ body {
   border: 1px solid var(--secondary-color) !important;
   background-color: var(--secondary-color) !important;
 }
-
 /* footer */
 .footer__logo {
   width: 40px;
-}
-.footer__list {
-  display: flex;
-  justify-content: space-between;
-}
-.footer__link {
-  list-style: none;
-}
-.footer {
-  background-color: rgba(0, 0, 0, 0.5);
 }

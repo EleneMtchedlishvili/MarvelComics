@@ -14,6 +14,8 @@ body {
   overflow-x: hidden;
   background-image: url(src/Marvel\ Images/bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed 100% 100%;
 }
 /* navigation */
 .nav-icon {
@@ -80,4 +82,5 @@ label {
   margin-left: 10px;
   margin-right: 10px;
   width: 480px;
+  margin-bottom: 5px;
 }
